@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProxyGram - Самый быстрый Telegram</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        tg: {
+                            blue: '#3390ec',
+                            dark: '#212121',
+                            darker: '#181818',
+                            light: '#ffffff',
+                            hover: '#2c7cce'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Кастомный скроллбар в стиле Telegram */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #181818; }
+        ::-webkit-scrollbar-thumb { background: #3390ec; border-radius: 4px; }
+    </style>
+</head>
+<body class="bg-tg-darker text-gray-100 font-sans min-h-screen flex flex-col selection:bg-tg-blue selection:text-white">
+    
+    <nav class="w-full p-6 flex justify-between items-center gs-fade">
+        <div class="text-2xl font-bold text-tg-blue tracking-wider">ProxyGram</div>
+        <a href="https://github.com/ktoto1300/ProxyGram" target="_blank" class="text-gray-400 hover:text-white transition-colors">GitHub</a>
+    </nav>
+
+    <!-- Ad Banner 728x90 -->
+    <div class="w-full flex justify-center py-4 gs-fade">
+        <script src="https://edersen.ru/19-95zwf.ryu13-3hcz-u7t80vkpv_hd.wy-1-2_xf.5y-?r=629912" type="text/javascript"></script>
+    </div>
+
+    <main class="flex-grow flex flex-col items-center justify-center p-4 text-center relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-tg-blue opacity-10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+
+        <div class="max-w-4xl w-full space-y-14 mt-8 mb-12">
+            
+            <div class="space-y-6 gs-hero">
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight">
+                    Твой <span class="text-tg-blue drop-shadow-[0_0_15px_rgba(51,144,236,0.5)]">ProxyGram</span>.<br>Скорость без границ.
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto">
+                    Продвинутый мод с мгновенным подключением к <span class="text-white font-bold">стабильным и высокоскоростным</span> MTProto прокси, режимом невидимки и снятием любых ограничений.
+                </p>
+            </div>
+
+            <div class="gs-hero relative z-10">
+                <a href="dist/ProxyGram.apk" download id="downloadBtn" class="inline-block group relative px-8 py-4 bg-tg-blue text-white text-xl font-bold rounded-2xl shadow-[0_0_20px_rgba(51,144,236,0.25)] hover:shadow-[0_0_35px_rgba(51,144,236,0.5)] hover:bg-tg-hover transition-all duration-300 transform hover:-translate-y-1 active:translate-y-0">
+                    <span class="flex items-center gap-3">
+                        <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Скачать APK
+                    </span>
+                </a>
+                <p class="mt-4 text-sm text-gray-500 font-mono">v1.0.0 • Android 6.0+</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-16 gs-features text-left">
+                <div class="bg-tg-dark/40 backdrop-blur-md p-6 rounded-3xl border border-white/5 hover:border-tg-blue/40 transition-colors duration-300">
+                    <div class="text-tg-blue text-4xl mb-4">🚀</div>
+                    <h3 class="text-xl font-bold mb-2">Ультра-быстрые прокси</h3>
+                    <p class="text-gray-400">Автоматический выбор прокси с минимальным пингом. Мгновенная загрузка медиа и сообщений даже при плохом интернете.</p>
+                </div>
+                
+                <div class="bg-tg-dark/40 backdrop-blur-md p-6 rounded-3xl border border-white/5 hover:border-tg-blue/40 transition-colors duration-300">
+                    <div class="text-tg-blue text-4xl mb-4">💎</div>
+                    <h3 class="text-xl font-bold mb-2">Стабильность 24/7</h3>
+                    <p class="text-gray-400">Наша система мониторинга удаляет нерабочие узлы. У вас всегда будет доступ к сети без ручного поиска серверов.</p>
+                </div>
+                
+                <div class="bg-tg-dark/40 backdrop-blur-md p-6 rounded-3xl border border-white/5 hover:border-tg-blue/40 transition-colors duration-300">
+                    <div class="text-tg-blue text-4xl mb-4">👻</div>
+                    <h3 class="text-xl font-bold mb-2">Ghost Mode</h3>
+                    <p class="text-gray-400">Читай без пометки о прочтении, скрывай статус «Печатает», смотри удаленные сообщения и статусы собеседников.</p>
+                </div>
+                
+                <div class="bg-tg-dark/40 backdrop-blur-md p-6 rounded-3xl border border-white/5 hover:border-tg-blue/40 transition-colors duration-300">
+                    <div class="text-tg-blue text-4xl mb-4">🔓</div>
+                    <h3 class="text-xl font-bold mb-2">Anti-Restrict</h3>
+                    <p class="text-gray-400">Снятие любых ограничений авторов. Сохраняй медиа, делай скриншоты и пересылай посты из защищенных каналов.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Ad Banner 468x60 -->
+    <div class="w-full flex justify-center py-4 gs-fade">
+        <script src="https://edersen.ru/-164.x4l-.r.eja0v_ow.axy./x/ak_0qibgm_jb492xf5y?r=629912" type="text/javascript"></script>
+    </div>
+
+    <footer class="w-full p-6 text-center text-gray-600 text-sm gs-fade relative z-10">
+        &copy; 2026 ProxyGram Project. Open Source.
+    </footer>
+
+    <script>
+        // Логика PopUnder
+        document.getElementById('downloadBtn').addEventListener('click', function(e) {
+            // PopUnder срабатывает только один раз
+            if (!window.popUnderShown) {
+                // Вставь сюда URL своей рекламной сети
+                window.open('https://ayhaidwao.com?directlink=1&code_type=1&sid=942886', '_blank'); 
+                window.popUnderShown = true;
+            }
+        });
+
+        // Анимации появления через GSAP
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.from(".gs-fade", { 
+                opacity: 0, y: -20, duration: 1, ease: "power3.out" 
+            });
+            
+            gsap.from(".gs-hero", { 
+                opacity: 0, y: 30, duration: 1, stagger: 0.2, ease: "power3.out", delay: 0.2 
+            });
+            
+            gsap.from(".gs-features > div", { 
+                opacity: 0, y: 40, duration: 0.8, stagger: 0.15, ease: "back.out(1.5)", delay: 0.6 
+            });
+        });
+    </script>
+</body>
+</html>
